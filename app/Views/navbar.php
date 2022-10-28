@@ -1,3 +1,11 @@
+<nav class="navbar bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Cozy Literasi
+            <img src="https://e7.pngegg.com/pngimages/382/847/png-clipart-logo-brand-line-book-top-view-angle-white.png"
+                alt="Logo" width="45" height="34" class="d-inline-block align-text-top">
+        </a>
+    </div>
+</nav>
 <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
     <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="/pages">PROJECT BETA</a>
@@ -19,20 +27,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/penjualan">Penjualan </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item ml-auto">
+                        <form action="/sessions/logout" method="post">
+                            <button type="submit" class="btn btn-link nav-link">Admin | Keluar</button>
+                        </form>
+                    </li>
+                </ul>
             </ul>
         </div>
     </div>

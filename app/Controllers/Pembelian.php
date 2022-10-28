@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
-class Pages extends BaseController
+class Pembelian extends BaseController
 {
     protected $session;
 
@@ -20,7 +20,7 @@ class Pages extends BaseController
             return redirect()->to('/');
         }
 
-        $data['main_view'] = 'pages/index';
+        $data['main_view'] = 'items/index';
         return view('layout', $data);
     }
 
@@ -31,7 +31,7 @@ class Pages extends BaseController
             return redirect()->to('/');
         }
 
-        $data['main_view'] = 'pages/dashboard';
+        $data['main_view'] = 'items/index';
         return view('layout', $data);
     }
 }
